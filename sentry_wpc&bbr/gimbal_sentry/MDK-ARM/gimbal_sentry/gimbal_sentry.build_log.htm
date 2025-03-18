@@ -3,30 +3,108 @@
 <pre>
 <h1>礦ision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: μVision V5.14.1
+IDE-Version: μVision V5.14.0.0
 Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: oew zifang11@outlook.com, wdaw, LIC=QF82M-XA4XR-KPQZY-I5L9R-Q56IM-CPT9N
+License Information: 1 1, 1, LIC=HN0AE-5YHEA-MMZ9I-TAPDW-N60JP-0YQZ1
  
 Tool Versions:
-Toolchain:       MDK-ARM Plus  Version: 5.24.1
-Toolchain Path:  D:\k5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.06 update 5 (build 528)
-Assembler:       Armasm.exe V5.06 update 5 (build 528)
-Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
-Library Manager: ArmAr.exe V5.06 update 5 (build 528)
-Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
-CPU DLL:         SARMCM3.DLL V5.24.1
-Dialog DLL:      DCM.DLL V1.16.0.0
-Target DLL:      Segger\JL2CM3.dll V2.99.26.0
-Dialog DLL:      TCM.DLL V1.32.0.0
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
  
 <h2>Project:</h2>
-D:\gimbal\gimbal_sentry\MDK-ARM\gimbal_sentry.uvprojx
-Project File Date:  02/21/2025
+D:\桌面\Robomaster\电控\github\RM25_sentry\sentry_wpc&bbr\gimbal_sentry\MDK-ARM\gimbal_sentry.uvprojx
+Project File Date:  03/17/2025
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\k5\ARM\ARMCC\Bin'
 Build target 'gimbal_sentry'
+assembling startup_stm32f407xx.s...
+compiling main.c...
+../baspcan/baspcan.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+../motor_define/motor_define.h(45): warning:  #1295-D: Deprecated declaration Chassis_PID_Init_All - give arg types
+  void Chassis_PID_Init_All();
+../motor_define/motor_define.h(48): warning:  #1-D: last line of file ends without a newline
+  #endif
+../motor_define/LK_9025.h(26): warning:  #1295-D: Deprecated declaration Motor_LK9025_angle_get - give arg types
+  void Motor_LK9025_angle_get();
+../motor_define/LK_9025.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c: 5 warnings, 0 errors
+compiling gpio.c...
+compiling freertos.c...
+compiling can.c...
+compiling crc.c...
+compiling dma.c...
+compiling i2c.c...
+compiling spi.c...
+compiling tim.c...
+compiling usart.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_timebase_tim.c...
+compiling usb_device.c...
+compiling usbd_desc.c...
+compiling usbd_cdc_if.c...
+../vision/vision.h(50): warning:  #1295-D: Deprecated declaration vision_transmit - give arg types
+  void vision_transmit();
+../vision/vision.h(51): warning:  #1295-D: Deprecated declaration vision_transmit_judge - give arg types
+  void vision_transmit_judge();
+../vision/vision.h(53): warning:  #1-D: last line of file ends without a newline
+  #endif
+../USB_DEVICE/App/usbd_cdc_if.c: 3 warnings, 0 errors
+compiling usbd_conf.c...
+compiling stm32f4xx_hal_pcd.c...
+compiling stm32f4xx_hal_pcd_ex.c...
+compiling stm32f4xx_ll_usb.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_can.c...
+compiling stm32f4xx_hal_crc.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_i2c_ex.c...
+compiling stm32f4xx_hal_spi.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_uart.c...
+compiling system_stm32f4xx.c...
+compiling croutine.c...
+compiling event_groups.c...
+compiling list.c...
+compiling queue.c...
+compiling stream_buffer.c...
+compiling tasks.c...
+compiling timers.c...
+compiling cmsis_os.c...
+compiling heap_4.c...
+compiling port.c...
+compiling usbd_core.c...
+compiling usbd_ctlreq.c...
+compiling usbd_ioreq.c...
+compiling usbd_cdc.c...
+compiling BMI088driver.c...
+compiling BMI088Middleware.c...
+compiling bsp_imu_pwm.c...
+compiling bsp_spi.c...
 compiling INS_task.c...
 ../motor_define/LK_9025.h(26): warning:  #1295-D: Deprecated declaration Motor_LK9025_angle_get - give arg types
   void Motor_LK9025_angle_get();
@@ -50,34 +128,297 @@ compiling INS_task.c...
                                         motor_yaw.Set_Angle=(computer_from.zimiao.big_yaw-0)/6.2831852*8191+2674;
 ..\IMU\INS_task.c(505): warning:  #1035-D: single-precision operand implicitly converted to double-precision
                                         motor_yaw.Set_Angle=(computer_from.zimiao.big_yaw-0)/6.2831852*8191+2674;
-..\IMU\INS_task.c(176): warning:  #550-D: variable "accel_fliter_1"  was set but never used
+..\IMU\INS_task.c(176): warning:  #550-D: variable "accel_fliter_1" was set but never used
   static fp32 accel_fliter_1[3] = {0.0f, 0.0f, 0.0f};
-..\IMU\INS_task.c(177): warning:  #550-D: variable "accel_fliter_2"  was set but never used
+..\IMU\INS_task.c(177): warning:  #550-D: variable "accel_fliter_2" was set but never used
   static fp32 accel_fliter_2[3] = {0.0f, 0.0f, 0.0f};
-..\IMU\INS_task.c(179): warning:  #177-D: variable "fliter_num"  was declared but never referenced
+..\IMU\INS_task.c(179): warning:  #177-D: variable "fliter_num" was declared but never referenced
   static const fp32 fliter_num[3] = {1.929454039488895f, -0.93178349823448126f, 0.002329458745586203f};
 ..\IMU\INS_task.c: 14 warnings, 0 errors
+compiling ist8310driver.c...
+compiling ist8310driver_middleware.c...
+compiling MahonyAHRS.c...
+compiling baspcan.c...
+..\baspcan\baspcan.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+../motor_define/motor_define.h(45): warning:  #1295-D: Deprecated declaration Chassis_PID_Init_All - give arg types
+  void Chassis_PID_Init_All();
+../motor_define/motor_define.h(48): warning:  #1-D: last line of file ends without a newline
+  #endif
+../motor_define/LK_9025.h(26): warning:  #1295-D: Deprecated declaration Motor_LK9025_angle_get - give arg types
+  void Motor_LK9025_angle_get();
+../motor_define/LK_9025.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+../vision/vision.h(50): warning:  #1295-D: Deprecated declaration vision_transmit - give arg types
+  void vision_transmit();
+../vision/vision.h(51): warning:  #1295-D: Deprecated declaration vision_transmit_judge - give arg types
+  void vision_transmit_judge();
+../vision/vision.h(53): warning:  #1-D: last line of file ends without a newline
+  #endif
+../shoot_task/shoot.h(10): warning:  #1295-D: Deprecated declaration Shoot_Reload_Choose - give arg types
+  void Shoot_Reload_Choose();
+../shoot_task/shoot.h(11): warning:  #1295-D: Deprecated declaration Shoot_Remote_Control - give arg types
+  void Shoot_Remote_Control();
+../shoot_task/shoot.h(12): warning:  #1295-D: Deprecated declaration Shoot_Move - give arg types
+  void Shoot_Move();
+../shoot_task/shoot.h(13): warning:  #1295-D: Deprecated declaration Shoot_PID_Init_ALL - give arg types
+  void Shoot_PID_Init_ALL();
+../shoot_task/shoot.h(14): warning:  #1295-D: Deprecated declaration Shoot_PID_Calc - give arg types
+  void Shoot_PID_Calc();
+../shoot_task/shoot.h(15): warning:  #1295-D: Deprecated declaration Shoot_PID_Clean_ALL - give arg types
+  void Shoot_PID_Clean_ALL();
+../shoot_task/shoot.h(16): warning:  #1295-D: Deprecated declaration Shoot_Stop - give arg types
+  void Shoot_Stop();
+..\baspcan\baspcan.c(456): warning:  #223-D: function "memset" declared implicitly
+                memset(vision_transmit_buff,0,sizeof(vision_transmit_buff));  //把vision这个数组设置为0;
+..\baspcan\baspcan.c(461): warning:  #223-D: function "memcpy" declared implicitly
+                memcpy(&(vision_transmit_buff[2]),&infantry_1_place.places.place_x, 4); //
+..\baspcan\baspcan.c(472): warning:  #223-D: function "memset" declared implicitly
+                memset(vision_transmit_buff,0,sizeof(vision_transmit_buff));  //把vision这个数组设置为0;
+..\baspcan\baspcan.c(477): warning:  #223-D: function "memcpy" declared implicitly
+                memcpy(&(vision_transmit_buff[2]),&hero_place.places.place_x, 4);       //
+..\baspcan\baspcan.c(490): warning:  #223-D: function "memset" declared implicitly
+                memset(vision_transmit_buff,0,sizeof(vision_transmit_buff));  //把vision这个数组设置为0;
+..\baspcan\baspcan.c(495): warning:  #223-D: function "memcpy" declared implicitly
+                memcpy(&(vision_transmit_buff[2]),&hero_hp_red.shengming.hp, 2);        //
+..\baspcan\baspcan.c(508): warning:  #223-D: function "memset" declared implicitly
+                memset(vision_transmit_buff,0,sizeof(vision_transmit_buff));  //把vision这个数组设置为0;
+..\baspcan\baspcan.c(513): warning:  #223-D: function "memcpy" declared implicitly
+                memcpy(&(vision_transmit_buff[2]),&hero_hp_blue.shengming.hp, 2);       //
+..\baspcan\baspcan.c(526): warning:  #223-D: function "memset" declared implicitly
+                memset(vision_transmit_buff,0,sizeof(vision_transmit_buff));  //把vision这个数组设置为0;
+..\baspcan\baspcan.c(531): warning:  #223-D: function "memcpy" declared implicitly
+                memcpy(&(vision_transmit_buff[2]),&outpost_red_hp.shengming.hp, 2);     //
+..\baspcan\baspcan.c(542): warning:  #223-D: function "memset" declared implicitly
+                memset(vision_transmit_buff,0,sizeof(vision_transmit_buff));  //把vision这个数组设置为0;
+..\baspcan\baspcan.c(548): warning:  #223-D: function "memcpy" declared implicitly
+                memcpy(&(vision_transmit_buff[3]),&progress, 1);
+..\baspcan\baspcan.c(558): warning:  #223-D: function "memset" declared implicitly
+                memset(vision_transmit_buff,0,sizeof(vision_transmit_buff));  //把vision这个数组设置为0;
+..\baspcan\baspcan.c(563): warning:  #223-D: function "memcpy" declared implicitly
+                memcpy(&(vision_transmit_buff[2]),&target_robot.places.place_x, 4);     //
+..\baspcan\baspcan.c(576): warning:  #223-D: function "memset" declared implicitly
+                memset(vision_transmit_buff,0,sizeof(vision_transmit_buff));  //把vision这个数组设置为0;
+..\baspcan\baspcan.c(587): warning:  #223-D: function "memcpy" declared implicitly
+                memcpy(&(vision_transmit_buff[2]),&shouji, 1);  //
+..\baspcan\baspcan.c(600): warning:  #223-D: function "memset" declared implicitly
+                memset(vision_transmit_buff,0,sizeof(vision_transmit_buff));  //把vision这个数组设置为0;
+..\baspcan\baspcan.c(605): warning:  #223-D: function "memcpy" declared implicitly
+                memcpy(&(vision_transmit_buff[2]),&remain_zidan.shoot_remain, 2);       //
+..\baspcan\baspcan.c(607): warning:  #1-D: last line of file ends without a newline
+  }
+..\baspcan\baspcan.c: 34 warnings, 0 errors
+compiling motor_define.c...
+compiling motor4310.c...
+..\motor_define\motor4310.c(254): warning:  #177-D: variable "count" was declared but never referenced
+        uint8_t count = 0;
+..\motor_define\motor4310.c(411): warning:  #1-D: last line of file ends without a newline
+  }
+..\motor_define\motor4310.c: 2 warnings, 0 errors
+compiling motor_9025.c...
+..\motor_define\LK_9025.h(26): warning:  #1295-D: Deprecated declaration Motor_LK9025_angle_get - give arg types
+  void Motor_LK9025_angle_get();
+..\motor_define\LK_9025.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\motor_define\motor_9025.c(77): warning: C4487E: read from variable 'maxspeed' with offset out of bounds
+}
+..\motor_define\motor_9025.c: 3 warnings, 0 errors
+compiling pid.c...
+..\PID\pid.c(235): warning:  #177-D: variable "dndex" was declared but never referenced
+    uint8_t index,dndex;
+..\PID\pid.c: 1 warning, 0 errors
+compiling gimbal_task.c...
+../motor_define/motor_define.h(45): warning:  #1295-D: Deprecated declaration Chassis_PID_Init_All - give arg types
+  void Chassis_PID_Init_All();
+../motor_define/motor_define.h(48): warning:  #1-D: last line of file ends without a newline
+  #endif
+../baspcan/baspcan.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+../gimbal_task/gimbal.h(11): warning:  #1295-D: Deprecated declaration Gimbal_Remote_Control_normal - give arg types
+  void Gimbal_Remote_Control_normal();
+../gimbal_task/gimbal.h(12): warning:  #1295-D: Deprecated declaration Gimbal_Remote_Control_gyro - give arg types
+  void Gimbal_Remote_Control_gyro();
+../gimbal_task/gimbal.h(13): warning:  #1295-D: Deprecated declaration Gimbal_Calculate - give arg types
+  void Gimbal_Calculate();
+../gimbal_task/gimbal.h(14): warning:  #1295-D: Deprecated declaration Gimbal_PID_Calc - give arg types
+  void Gimbal_PID_Calc();
+../gimbal_task/gimbal.h(16): warning:  #1295-D: Deprecated declaration Gimbal_Move - give arg types
+  void Gimbal_Move();
+../gimbal_task/gimbal.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+../vision/vision.h(50): warning:  #1295-D: Deprecated declaration vision_transmit - give arg types
+  void vision_transmit();
+../vision/vision.h(51): warning:  #1295-D: Deprecated declaration vision_transmit_judge - give arg types
+  void vision_transmit_judge();
+../vision/vision.h(53): warning:  #1-D: last line of file ends without a newline
+  #endif
+../motor_define/LK_9025.h(26): warning:  #1295-D: Deprecated declaration Motor_LK9025_angle_get - give arg types
+  void Motor_LK9025_angle_get();
+../motor_define/LK_9025.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+../shoot_task/shoot.h(10): warning:  #1295-D: Deprecated declaration Shoot_Reload_Choose - give arg types
+  void Shoot_Reload_Choose();
+../shoot_task/shoot.h(11): warning:  #1295-D: Deprecated declaration Shoot_Remote_Control - give arg types
+  void Shoot_Remote_Control();
+../shoot_task/shoot.h(12): warning:  #1295-D: Deprecated declaration Shoot_Move - give arg types
+  void Shoot_Move();
+../shoot_task/shoot.h(13): warning:  #1295-D: Deprecated declaration Shoot_PID_Init_ALL - give arg types
+  void Shoot_PID_Init_ALL();
+../shoot_task/shoot.h(14): warning:  #1295-D: Deprecated declaration Shoot_PID_Calc - give arg types
+  void Shoot_PID_Calc();
+../shoot_task/shoot.h(15): warning:  #1295-D: Deprecated declaration Shoot_PID_Clean_ALL - give arg types
+  void Shoot_PID_Clean_ALL();
+../shoot_task/shoot.h(16): warning:  #1295-D: Deprecated declaration Shoot_Stop - give arg types
+  void Shoot_Stop();
+gimbal_task.c(281): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                if(DM4310_pitch.target_angle>0.7){
+gimbal_task.c(302): warning:  #1-D: last line of file ends without a newline
+  }
+gimbal_task.c(135): warning:  #177-D: variable "count_update" was declared but never referenced
+        uint8_t count_update=4,i=0;
+gimbal_task.c(135): warning:  #177-D: variable "i" was declared but never referenced
+        uint8_t count_update=4,i=0;
+gimbal_task.c(137): warning:  #177-D: variable "count" was declared but never referenced
+        uint8_t count = 0;
+gimbal_task.c: 26 warnings, 0 errors
+compiling gimbal.c...
+../motor_define/motor_define.h(45): warning:  #1295-D: Deprecated declaration Chassis_PID_Init_All - give arg types
+  void Chassis_PID_Init_All();
+../motor_define/motor_define.h(48): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\gimbal_task\gimbal.h(11): warning:  #1295-D: Deprecated declaration Gimbal_Remote_Control_normal - give arg types
+  void Gimbal_Remote_Control_normal();
+..\gimbal_task\gimbal.h(12): warning:  #1295-D: Deprecated declaration Gimbal_Remote_Control_gyro - give arg types
+  void Gimbal_Remote_Control_gyro();
+..\gimbal_task\gimbal.h(13): warning:  #1295-D: Deprecated declaration Gimbal_Calculate - give arg types
+  void Gimbal_Calculate();
+..\gimbal_task\gimbal.h(14): warning:  #1295-D: Deprecated declaration Gimbal_PID_Calc - give arg types
+  void Gimbal_PID_Calc();
+..\gimbal_task\gimbal.h(16): warning:  #1295-D: Deprecated declaration Gimbal_Move - give arg types
+  void Gimbal_Move();
+..\gimbal_task\gimbal.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\gimbal_task\gimbal.c(31): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        motor_yaw.Set_Angle = motor_yaw.Set_Angle+GYROSCOPE_SPEED-gimbal_remote.Yaw;
+..\gimbal_task\gimbal.c(88): warning:  #1-D: last line of file ends without a newline
+  }
+..\gimbal_task\gimbal.c: 10 warnings, 0 errors
+compiling remote.c...
+../baspcan/baspcan.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\remote\remote.c: 1 warning, 0 errors
+compiling shoot.c...
+../baspcan/baspcan.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+../motor_define/motor_define.h(45): warning:  #1295-D: Deprecated declaration Chassis_PID_Init_All - give arg types
+  void Chassis_PID_Init_All();
+../motor_define/motor_define.h(48): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\shoot_task\shoot.h(10): warning:  #1295-D: Deprecated declaration Shoot_Reload_Choose - give arg types
+  void Shoot_Reload_Choose();
+..\shoot_task\shoot.h(11): warning:  #1295-D: Deprecated declaration Shoot_Remote_Control - give arg types
+  void Shoot_Remote_Control();
+..\shoot_task\shoot.h(12): warning:  #1295-D: Deprecated declaration Shoot_Move - give arg types
+  void Shoot_Move();
+..\shoot_task\shoot.h(13): warning:  #1295-D: Deprecated declaration Shoot_PID_Init_ALL - give arg types
+  void Shoot_PID_Init_ALL();
+..\shoot_task\shoot.h(14): warning:  #1295-D: Deprecated declaration Shoot_PID_Calc - give arg types
+  void Shoot_PID_Calc();
+..\shoot_task\shoot.h(15): warning:  #1295-D: Deprecated declaration Shoot_PID_Clean_ALL - give arg types
+  void Shoot_PID_Clean_ALL();
+..\shoot_task\shoot.h(16): warning:  #1295-D: Deprecated declaration Shoot_Stop - give arg types
+  void Shoot_Stop();
+..\shoot_task\shoot.c: 10 warnings, 0 errors
+compiling vision.c...
+..\vision\vision.h(50): warning:  #1295-D: Deprecated declaration vision_transmit - give arg types
+  void vision_transmit();
+..\vision\vision.h(51): warning:  #1295-D: Deprecated declaration vision_transmit_judge - give arg types
+  void vision_transmit_judge();
+..\vision\vision.h(53): warning:  #1-D: last line of file ends without a newline
+  #endif
+../motor_define/motor_define.h(45): warning:  #1295-D: Deprecated declaration Chassis_PID_Init_All - give arg types
+  void Chassis_PID_Init_All();
+../motor_define/motor_define.h(48): warning:  #1-D: last line of file ends without a newline
+  #endif
+../motor_define/LK_9025.h(26): warning:  #1295-D: Deprecated declaration Motor_LK9025_angle_get - give arg types
+  void Motor_LK9025_angle_get();
+../motor_define/LK_9025.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+../baspcan/baspcan.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\vision\vision.c(72): warning:  #177-D: variable "x_speed" was declared but never referenced
+        uint8_t *x_speed,*y_speed;
+..\vision\vision.c(72): warning:  #177-D: variable "y_speed" was declared but never referenced
+        uint8_t *x_speed,*y_speed;
+..\vision\vision.c(184): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                YAW_Vision=(motor_yaw.rotor_angle-2674)/8191.0f*2* 3.1415926;
+..\vision\vision.c(186): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        yaw_9025_vision=(motor_9025_yaw.encoder_place-64624.79f)/65535.0f*2*3.1415926;
+..\vision\vision.c(189): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        shangweiji_imu=yaw_imu/360.0f*6.28;
+..\vision\vision.c(261): warning:  #1-D: last line of file ends without a newline
+  }
+..\vision\vision.c: 14 warnings, 0 errors
+compiling test.c...
+../baspcan/baspcan.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+../motor_define/motor_define.h(45): warning:  #1295-D: Deprecated declaration Chassis_PID_Init_All - give arg types
+  void Chassis_PID_Init_All();
+../motor_define/motor_define.h(48): warning:  #1-D: last line of file ends without a newline
+  #endif
+../vision/vision.h(50): warning:  #1295-D: Deprecated declaration vision_transmit - give arg types
+  void vision_transmit();
+../vision/vision.h(51): warning:  #1295-D: Deprecated declaration vision_transmit_judge - give arg types
+  void vision_transmit_judge();
+../vision/vision.h(53): warning:  #1-D: last line of file ends without a newline
+  #endif
+../motor_define/LK_9025.h(26): warning:  #1295-D: Deprecated declaration Motor_LK9025_angle_get - give arg types
+  void Motor_LK9025_angle_get();
+../motor_define/LK_9025.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+../shoot_task/shoot.h(10): warning:  #1295-D: Deprecated declaration Shoot_Reload_Choose - give arg types
+  void Shoot_Reload_Choose();
+../shoot_task/shoot.h(11): warning:  #1295-D: Deprecated declaration Shoot_Remote_Control - give arg types
+  void Shoot_Remote_Control();
+../shoot_task/shoot.h(12): warning:  #1295-D: Deprecated declaration Shoot_Move - give arg types
+  void Shoot_Move();
+../shoot_task/shoot.h(13): warning:  #1295-D: Deprecated declaration Shoot_PID_Init_ALL - give arg types
+  void Shoot_PID_Init_ALL();
+../shoot_task/shoot.h(14): warning:  #1295-D: Deprecated declaration Shoot_PID_Calc - give arg types
+  void Shoot_PID_Calc();
+../shoot_task/shoot.h(15): warning:  #1295-D: Deprecated declaration Shoot_PID_Clean_ALL - give arg types
+  void Shoot_PID_Clean_ALL();
+../shoot_task/shoot.h(16): warning:  #1295-D: Deprecated declaration Shoot_Stop - give arg types
+  void Shoot_Stop();
+..\test\test.c(62): warning:  #1-D: last line of file ends without a newline
+  }
+..\test\test.c(32): warning:  #177-D: variable "Task_Time" was declared but never referenced
+        uint16_t Task_Time=0;
+..\test\test.c(33): warning:  #177-D: variable "tick" was declared but never referenced
+        uint8_t tick=0;
+..\test\test.c: 18 warnings, 0 errors
 linking...
-Program Size: Code=52004 RO-data=648 RW-data=804 ZI-data=27188  
+Program Size: Code=52000 RO-data=648 RW-data=804 ZI-data=27188  
 FromELF: creating hex file...
-"gimbal_sentry\gimbal_sentry.axf" - 0 Error(s), 14 Warning(s).
+"gimbal_sentry\gimbal_sentry.axf" - 0 Error(s), 141 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
-                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
-                ARM::CMSIS:CORE:5.0.1
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
                 CMSIS (Cortex Microcontroller Software Interface Standard)
-   * Component: CORE Version: 5.0.1
+   * Component: CORE Version: 3.40.0
 
 <h2>Collection of Component include folders:</h2>
-  D:\gimbal\gimbal_sentry\MDK-ARM\RTE
-  D:\k5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
-  D:\k5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  D:\桌面\Robomaster\电控\github\RM25_sentry\sentry_wpc&bbr\gimbal_sentry\MDK-ARM\RTE
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:CORE:5.0.1
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
 </pre>
 </body>
 </html>

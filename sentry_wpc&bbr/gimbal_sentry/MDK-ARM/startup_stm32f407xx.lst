@@ -849,11 +849,11 @@ erwork --depend=gimbal_sentry\startup_stm32f407xx.d -ogimbal_sentry\startup_stm
 ARM Macro Assembler    Page 14 
 
 
-32f407xx.o -I../Core/Inc -ID:\gimbal\gimbal_sentry\MDK-ARM\RTE -ID:\k5\ARM\PACK
-\ARM\CMSIS\5.0.1\CMSIS\Include -ID:\k5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drive
-rs\CMSIS\Device\ST\STM32F4xx\Include --predefine="__UVISION_VERSION SETA 514" -
--predefine="_RTE_ SETA 1" --predefine="STM32F407xx SETA 1" --list=startup_stm32
-f407xx.lst startup_stm32f407xx.s
+32f407xx.o -I../Core/Inc -ID:\×ÀÃæ\Robomaster\µç¿Ø\github\RM25_sentry\sentry_wp
+c&bbr\gimbal_sentry\MDK-ARM\RTE -ID:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Inc
+lude -ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0 --predefine="__UVISION_VER
+SION SETA 514" --predefine="_RTE_ SETA 1" --predefine="STM32F407xx SETA 1" --li
+st=startup_stm32f407xx.lst startup_stm32f407xx.s
 
 
 

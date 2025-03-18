@@ -1,8 +1,8 @@
 gimbal_sentry\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
-gimbal_sentry\stream_buffer.o: D:\k5\ARM\ARMCC\Bin\..\include\stdint.h
-gimbal_sentry\stream_buffer.o: D:\k5\ARM\ARMCC\Bin\..\include\string.h
+gimbal_sentry\stream_buffer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+gimbal_sentry\stream_buffer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 gimbal_sentry\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-gimbal_sentry\stream_buffer.o: D:\k5\ARM\ARMCC\Bin\..\include\stddef.h
+gimbal_sentry\stream_buffer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 gimbal_sentry\stream_buffer.o: ../Core/Inc/FreeRTOSConfig.h
 gimbal_sentry\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 gimbal_sentry\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

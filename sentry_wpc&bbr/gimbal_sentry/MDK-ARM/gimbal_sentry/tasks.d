@@ -1,9 +1,9 @@
 gimbal_sentry\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
-gimbal_sentry\tasks.o: D:\k5\ARM\ARMCC\Bin\..\include\stdlib.h
-gimbal_sentry\tasks.o: D:\k5\ARM\ARMCC\Bin\..\include\string.h
+gimbal_sentry\tasks.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+gimbal_sentry\tasks.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 gimbal_sentry\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-gimbal_sentry\tasks.o: D:\k5\ARM\ARMCC\Bin\..\include\stddef.h
-gimbal_sentry\tasks.o: D:\k5\ARM\ARMCC\Bin\..\include\stdint.h
+gimbal_sentry\tasks.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+gimbal_sentry\tasks.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 gimbal_sentry\tasks.o: ../Core/Inc/FreeRTOSConfig.h
 gimbal_sentry\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 gimbal_sentry\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

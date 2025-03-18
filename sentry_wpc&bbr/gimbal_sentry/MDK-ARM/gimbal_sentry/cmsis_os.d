@@ -1,9 +1,9 @@
 gimbal_sentry\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
-gimbal_sentry\cmsis_os.o: D:\k5\ARM\ARMCC\Bin\..\include\string.h
+gimbal_sentry\cmsis_os.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 gimbal_sentry\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 gimbal_sentry\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-gimbal_sentry\cmsis_os.o: D:\k5\ARM\ARMCC\Bin\..\include\stddef.h
-gimbal_sentry\cmsis_os.o: D:\k5\ARM\ARMCC\Bin\..\include\stdint.h
+gimbal_sentry\cmsis_os.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+gimbal_sentry\cmsis_os.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 gimbal_sentry\cmsis_os.o: ../Core/Inc/FreeRTOSConfig.h
 gimbal_sentry\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 gimbal_sentry\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

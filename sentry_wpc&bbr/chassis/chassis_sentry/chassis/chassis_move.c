@@ -335,10 +335,10 @@ void Chassis_Move_Auto()
 	if(xiaotuoluo_flag==0){
 		
 	
-	motor_3508[0].Set_Speed = Chassis_Speed.vx * 0.7071068f * Speed_Set + Chassis_Speed.vy * 0.7071068f * Speed_Set;
-	motor_3508[1].Set_Speed = Chassis_Speed.vx * 0.7071068f * Speed_Set - Chassis_Speed.vy * 0.7071068f * Speed_Set;
-	motor_3508[2].Set_Speed = -Chassis_Speed.vx * 0.7071068f * Speed_Set - Chassis_Speed.vy * 0.7071068f * Speed_Set;
-	motor_3508[3].Set_Speed = -Chassis_Speed.vx * 0.7071068f * Speed_Set + Chassis_Speed.vy * 0.7071068f * Speed_Set;	
+	motor_3508[0].Set_Speed = Chassis_Speed.vx * Speed_Set + Chassis_Speed.vy  * Speed_Set;
+	motor_3508[1].Set_Speed = Chassis_Speed.vx * Speed_Set - Chassis_Speed.vy  * Speed_Set;
+	motor_3508[2].Set_Speed = -Chassis_Speed.vx  * Speed_Set - Chassis_Speed.vy  * Speed_Set;
+	motor_3508[3].Set_Speed = -Chassis_Speed.vx  * Speed_Set + Chassis_Speed.vy  * Speed_Set;	
 	}
 	if(xiaotuoluo_flag==1){
 		

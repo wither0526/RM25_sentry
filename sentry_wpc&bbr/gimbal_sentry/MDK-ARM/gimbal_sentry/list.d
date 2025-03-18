@@ -1,8 +1,8 @@
 gimbal_sentry\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
-gimbal_sentry\list.o: D:\k5\ARM\ARMCC\Bin\..\include\stdlib.h
+gimbal_sentry\list.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 gimbal_sentry\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-gimbal_sentry\list.o: D:\k5\ARM\ARMCC\Bin\..\include\stddef.h
-gimbal_sentry\list.o: D:\k5\ARM\ARMCC\Bin\..\include\stdint.h
+gimbal_sentry\list.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+gimbal_sentry\list.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 gimbal_sentry\list.o: ../Core/Inc/FreeRTOSConfig.h
 gimbal_sentry\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 gimbal_sentry\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

@@ -154,9 +154,9 @@ void StartChassisTask(void const * argument)
     portTickType currentTime;
 	Chassis_PID_Init_All();
 	osDelay(500);
-	//pid_init(&motor_9025_yaw.LK_9025_speed,2.1,0.04,0,1200,2045);
+
 	pid_init(&motor_9025_yaw.LK_9025_speed,1.7,0,0,1200,2045);
-	//pid_init(&motor_9025_yaw.LK_9025_current,230,40,0,-16.5,16.5);
+
 	pid_init(&motor_9025_yaw.LK_9025_angle,0,0,0,300,300);
 	motor_9025_yaw.LK_9025_angle.i_seperate=1200;
 	motor_9025_yaw.LK_9025_speed.i_seperate=50;
@@ -167,8 +167,7 @@ void StartChassisTask(void const * argument)
     currentTime = xTaskGetTickCount();//当前系统时间
 	for(;;)
     { 
-		//Motor_LK9025_Enable(&hcan2,0x141);
-		//Motor_LK9025_Enable(&hcan2,0x141);
+
 		
 		if(RC_CtrlData.rc.s1==1 && RC_CtrlData.rc.s2==1)  //自动模式
 		{
@@ -179,8 +178,7 @@ void StartChassisTask(void const * argument)
 			gyro_flag=1;
 			Chassis_Remote_Control_normal();
 			Chassis_Move();
-			//remote_angle=-RC_CtrlData.rc.ch0/110;
-			//Motor_LK9025_angle_more(&hcan2,0x141,remote_angle);
+
 			speed_9025=-RC_CtrlData.rc.ch0*25;
 			Motor_LK9025_control_speed(&hcan2,0x141,speed_9025);
 			
@@ -191,7 +189,7 @@ void StartChassisTask(void const * argument)
 			Chassis_Remote_Control_normal();
 			Chassis_Move();
 			Motor_LK9025_angle_more(&hcan2,0x141,0);
-//			target_anlge=target_anlge+RC_CtrlData.rc.ch0/660.0f;
+
 		}
 		else if(RC_CtrlData.rc.s1==2 && RC_CtrlData.rc.s2==1){ //小陀螺
 			Chassis_Remote_Control_normal();
@@ -210,16 +208,9 @@ void StartChassisTask(void const * argument)
 			Motor_LK9025_control_speed(&hcan2,0x141,angle_more);
 		}
 	}
-		//PID_Calc_Speed(&motor_9025_yaw.LK_9025_speed,)
-		//Chassis_Remote_Control_normal();
-		//Chassis_Move();
-		// yaw_speed=500;
-		//Motor_LK9025_control_speed(&hcan2,0x141,yaw_speed);
+
 		motor_9025_yaw.now_angle=((float)motor_9025_yaw.encoder_place)/65535.0f*360.0f;
-//		//PID_Calc_Speed(&motor_9025_yaw.LK_9025_speed,motor_9025_yaw.target_speed,motor_9025_yaw.now_speed);
-//		PID_Calc_Speed(&motor_9025_yaw.LK_9025_angle,motor_9025_yaw.target_angle,imu_yaw_angle);
-//		PID_Calc_Speed(&motor_9025_yaw.LK_9025_speed,motor_9025_yaw.target_speed,motor_9025_yaw.speed);
-//		Motor_LK9025_control_FN(&hcan2,0x141,motor_9025_yaw.LK_9025_speed.output);
+
         vTaskDelayUntil(&currentTime,5);//绝对延时
     }
 
